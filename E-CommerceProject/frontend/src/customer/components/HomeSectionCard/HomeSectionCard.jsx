@@ -1,5 +1,6 @@
 import React from "react";
-import "../HomeSectionCard.css"
+import "./HomeSectionCard.css";
+
 const HomeSectionCard = () => {
   return (
     <div className="cardContainer">
