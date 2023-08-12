@@ -1,0 +1,41 @@
+.cardContainer {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 15rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.item {
+    height: 13rem;
+    width: 10rem;
+}
+
+.itemImage {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+.itemSpace{
+    padding: 1rem;
+}
+
+.itemHeading {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.itemSubheading{
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
