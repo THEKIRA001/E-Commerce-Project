@@ -1,7 +1,6 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
-import HomeSectionCard from "../HomeSectionCard/HomeSectionCard";
-import "./HomeSectionCard.css";
+import HomeSectionCard from "../HomePageComponents/HomeSectionCard";
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 const HomeSectionCarousel = () => {
@@ -12,16 +11,16 @@ const HomeSectionCarousel = () => {
   };
   const items = [1, 1, 1, 1, 1].map((item) => <HomeSectionCard />);
   return (
-    <div className="section">
-      <div className="sectionCarousel">
+    <div className='"relative px-4 lg:px-8"'>
+      <div className="relative p-5">
         <AliceCarousel
           infinite
           items={items}
           disableButtonsControls
           responsive={responsive}
         />
-        <button variant="contained" className="z-50" sx={{position:'absolute', top:"8rem", right:"0rem", transform:"translateX(50%)"}} aria-label="next">
-    <KeyboardArrowLeftIcon/>
+        <button variant="contained" className="z-100" sx={{position:'absolute', top:"15rem", right:"0rem", transform:"translateX(50%) rotate(90deg)"}} aria-label="next">
+    <KeyboardArrowLeftIcon sx={{transform:"rotate(90deg)"}}/>
         </button>
       </div>
     </div>
